@@ -697,8 +697,10 @@ class Document(Container):
         kml.save("Document.kml")
     """
 
-    def __init__(self, **kwargs):
+    def __init__(self, name_as_id=False, **kwargs):
         super(Document, self).__init__(**kwargs)
+        if name_as_id:
+            self._id = self.name
 
     def newschema(self, **kwargs):
         """Creates a new :class:`simplekml.Schema` and attaches it to this KML document.

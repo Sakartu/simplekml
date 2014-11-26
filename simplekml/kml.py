@@ -50,8 +50,8 @@ class Kml(object):
         print kml.kml()  # Printing out the kml to screen
     """
 
-    def __init__(self, **kwargs):
-        self._feature = Document(**kwargs)
+    def __init__(self, name_as_id=False, **kwargs):
+        self._feature = Document(name_as_id, **kwargs)
         self._networklinkcontrol = None
         self._hint = None
 

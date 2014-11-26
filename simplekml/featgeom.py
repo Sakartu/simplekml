@@ -686,7 +686,10 @@ class Container(Feature):
 class Document(Container):
     """A container for features and styles.
 
-    Arguments are the same as the properties.
+    Arguments are generally the same as the properties.
+
+    If the name_as_id argument is set to True, the id of this Document will be
+    the same as this Document's name property.
 
     Usage::
 

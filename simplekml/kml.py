@@ -40,6 +40,10 @@ class Kml(object):
     arguments mean see the KML reference documentation published by Google:
     http://code.google.com/apis/kml/documentation/kmlreference.html
 
+    One extra argument is the name_as_id parameter; set this parameter to True if
+    you want the id of the inner Document to be the same as the name property of
+    this Kml object.
+
     Simple Example::
 
         from simplekml import Kml

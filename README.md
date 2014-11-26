@@ -3,7 +3,8 @@ Simplekml
 
 This is a (modified) clone of the code found at https://code.google.com/p/simplekml/. It encorporates a number of changes, which are listed here:
 
- - (None so far)
+ - The id field of the main Document feature is no onger read-only. Changing the id field of the Document may help when one is trying to create a Tour, in which a gx:AnimatedUpdate requires that you give the id of the feature to change.
+ - The constructor of the Kml and Document classes now both have a "name_as_id" feature. If this is set to True, the id property of the main Document will be the same as it's name. This feature is also implemented to help with creating Tours (see above)
 
 Original documentation
 ----------------------

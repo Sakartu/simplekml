@@ -1,8 +1,12 @@
+Simplekml
+---------
+
 This is a (modified) clone of the code found at https://code.google.com/p/simplekml/. It encorporates a number of changes, which are listed here:
 
+ - <None so far>
 
-
-Original documentation:
+Original documentation
+----------------------
 
 simplekml is a python package which enables you to generate KML with as little effort as possible.
 

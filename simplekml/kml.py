@@ -56,6 +56,14 @@ class Kml(object):
         self._hint = None
 
     @property
+    def id(self):
+        return self.document.id
+
+    @id.setter
+    def id(self, value):
+        self.document._id = value
+
+    @property
     def features(self):
         """Returns a list of all the features that have been attached to the top level document."""
         return self.document.features
